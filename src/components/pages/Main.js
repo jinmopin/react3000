@@ -13,16 +13,23 @@ import Layout from '../Layout';
 //         </div>
 //     );
 // }
-function Info(prop) {
+function Info(props) {
     return (
         <div className="main__cont">
-            <div>{prop.text1}</div>
-            <div>{prop.text2}</div>
-            <div>{prop.text3}</div>
-            <div>{prop.text4}</div>
+            <div>{props.text1}</div>
+            <div>{props.text2}</div>
+            <div>{props.text3}</div>
+            <div>{props.text4}</div>
         </div>
     );
 }
+
+const textInfo = {
+    text1 : "WE PROVIDE", 
+    text2 : "VISUAL CODING",
+    text3 : "SOLUTION" ,
+    text4 : "FOR YOU WEBS",
+};
 
 function Main(){
     return (
@@ -32,10 +39,10 @@ function Main(){
             <section id="mainCont">
                 <div className="main__cont">
                     <Info 
-                    text1="WE PROVIDE" 
-                    text2="VISUAL CODING" 
-                    text3="SOLUTION" 
-                    text4="FOR YOU WEBS" 
+                        text1={textInfo.text1}
+                        text2={textInfo.text2}
+                        text3={textInfo.text3}
+                        text4={textInfo.text4}
                     />
                 </div>
             </section>
