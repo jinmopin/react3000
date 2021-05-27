@@ -10,7 +10,7 @@ const textInfo = [
   { text: "WE PROVIDE" },
   { text: "VISUAL CODING" },
   { text: "SOLUTION" },
-  { text: "FOR YOU WEBS" }, 
+  { text: "FOR YOU WEBS" },
 ];
 
 function Main() {
@@ -21,7 +21,7 @@ function Main() {
         <section id="mainCont">
           <div className="main__cont">
             {textInfo.map((el) => (
-                <Info text={el.text} />
+              <Info text={el.text} key={el.text} />
             ))}
           </div>
         </section>

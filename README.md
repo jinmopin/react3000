@@ -18,4 +18,4 @@ npm install node-sass
 
 ## ESLINT, prettier
 
-설치 후 save 관련 체크, saveformat 설정, Beautify 삭제
+설치 후 file -> preference -> setting -> format on save 체크, 맨 위 우선설정 프리티어로 설정
